@@ -79,7 +79,7 @@ flex: 1;
 }
 .my-channel-icon {
   height:32px;
-  border-radius: 16px;
+  border-radius: 50%;
 
 }
 .search {
