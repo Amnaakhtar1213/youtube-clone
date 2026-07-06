@@ -273,20 +273,79 @@ display: flex;
    
 }
 
-@media (max-width:750px) {
-  .grid{
-    grid-template-columns: 1fr 1fr;
+
+@media (max-width: 999px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr; /* 3 videos per row */
   }
 }
 
-@media (min-width:751px) and (max-width:999px){
-  .grid{
-    grid-template-columns:1fr 1fr 1fr;
+/* Small tablets / large phones */
+@media (max-width: 750px) {
+  .grid {
+    grid-template-columns: 1fr 1fr; /* 2 videos per row */
   }
+}
+
+/* Mobile screens (≤480px) */
+@media (max-width: 480px) {
+  body {
+    padding-top: 60px;   /* reduce top padding */
+    padding-left: 0;     /* remove sidebar space */
+    padding-right: 10px;
+  }
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* logo left, icons right */
+    align-items: center;
+    padding: 0 10px;
+    height: 50px;
+  }
+ .left-sec {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
   }
 
-@media (max-width:1000px) {
+  .hamburger {
+    display: none;       /* hide hamburger on very small screens */
+  }
+
+   .utube-logo {
+    display: block;   /* force logo to show */
+    height: 22px;     /* adjust size for visibility */
+    width: auto;
+  }
+
+  .middle-sec {
+    display: none;       /* hide search bar on mobile */
+  }
+
+  .right-sec {
+    width: auto;
+    margin-right: 0;
+    gap: 12px;
+  }
+
+  .upload-icon,
+  .utube-app-icon,
+  .notification,
+  .my-channel-icon {
+    height: 20px;        /* shrink icons */
+  }
+
+  .sidebar {
+    display: none;       /* hide sidebar on mobile */
+  }
+
   .grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr; /* single column videos */
+    column-gap: 10px;
+    row-gap: 20px;
+  }
+
+  .video-info {
+    width: auto;         /* let text fill naturally */
   }
 }
