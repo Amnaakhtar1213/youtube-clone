@@ -33,10 +33,10 @@ Here's take a quick look:
 ## LIVE DEMO 🌐
 
 Here's test yourself via live-demo:
-- [Click here for utube clone live-demo](https://amnaakhtar1213.github.io/youtube-clone/)
+- [Click here for utube clone live-demo](https://amnaakhtar1213.github.io/TubeCraft/)
 
 -----------------------------
 
 ## Clone this repository
 ```bash
-git clone https://github.com/Amnaakhtar1213/youtube-clone.git
+git clone https://github.com/Amnaakhtar1213/TubeCraft.git
